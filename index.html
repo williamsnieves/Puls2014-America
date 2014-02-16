@@ -7,7 +7,7 @@
 	<title>Puls2014</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
-
+	<script src="assets/prefixfree.js"></script>
 </head>
 <body>
 	<header>
@@ -16,7 +16,6 @@
 		</figure>
 		<h1>Puls 2014</h1>		
 		<figure id="avatar">
-			<img src="assets/avatar.jpg" />
 		</figure>
 	</header>
 	<nav>
@@ -36,6 +35,9 @@
 		<input type="submit" value="Agregar"/>
 	</form>
 	<aside>
+		<div id="geo">
+
+		</div>
 		<video width="320" height="240" autoplay>
 			<source src="assets/lecturas.mp4" type="video/mp4"/>
 			<source src="assets/lecturas.ogg" type="video/ogg"/>
@@ -147,11 +149,8 @@
 	</footer>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/formulario.js"></script>
-	<script>
-		$(function(){
-
-		})
-
-	</script>
+	<script src="js/geo.js"></script>
+	<script src="js/ajax.js"></script>
+	
 </body>
 </html>
