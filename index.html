@@ -2,10 +2,12 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8"/>
-	<meta name="description" content="Proyecto del curso de mejorandola diseño web"/> 
+	<meta name="description" content="Proyecto del curso de mejorandola diseño web"/>
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1"> 
 	<title>Puls2014</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
 	<header>
@@ -24,10 +26,22 @@
 			<li><a href="#">Javascript</a></li>
 			<li><a href="#">css3</a></li>
 			<li><a href="#">django</a></li>
-			<li id="publicar_nav"><a href="#" >Publicar</a></li>
+			<li id="publicar_nav"><a href="#" class="icon-pencil" id="mostrar-form" >Publicar</a></li>
 
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="titulo" required/>
+		<input type="url" id="url" placeholder="link" required/>
+		<input type="submit" value="Agregar"/>
+	</form>
+	<aside>
+		<video width="320" height="240" autoplay>
+			<source src="assets/lecturas.mp4" type="video/mp4"/>
+			<source src="assets/lecturas.ogg" type="video/ogg"/>
+			Your browser does not support video tag
+		</video>
+	</aside>	
 
 	<section id="contenido">
 		<article class="item">
@@ -41,11 +55,11 @@
 				<span class="fecha_item">Hace <strong>5</strong> mins</span>
 			</p>
 			<p class="votacion">
-				<a class="up" href="#">U</a>
+				<a class="up icon-arrow-up" href="#"></a>
 				696
-				<a class="down" href="#">D</a>
+				<a class="down icon-arrow-down" href="#"></a>
 				<a class="comentarios_item" href="#">3</a>
-				<a class="guardar_item" href="#">X</a>
+				<a class="guardar_item icon-star" href="#"></a>
 			</p>
 		</article>
 		<article class="item">
@@ -59,11 +73,11 @@
 				<span class="fecha_item">Hace <strong>5</strong> mins</span>
 			</p>
 			<p class="votacion">
-				<a class="up" href="#">U</a>
+				<a class="up icon-arrow-up" href="#"></a>
 				696
-				<a class="down" href="#">D</a>
+				<a class="down icon-arrow-down" href="#"></a>
 				<a class="comentarios_item" href="#">3</a>
-				<a class="guardar_item" href="#">X</a>
+				<a class="guardar_item icon-star" href="#"></a>
 			</p>
 		</article>
 		<article class="item">
@@ -77,11 +91,11 @@
 				<span class="fecha_item">Hace <strong>5</strong> mins</span>
 			</p>
 			<p class="votacion">
-				<a class="up" href="#">U</a>
+				<a class="up icon-arrow-up" href="#"></a>
 				696
-				<a class="down" href="#">D</a>
+				<a class="down icon-arrow-down" href="#"></a>
 				<a class="comentarios_item" href="#">3</a>
-				<a class="guardar_item" href="#">X</a>
+				<a class="guardar_item icon-star" href="#"></a>
 			</p>
 		</article>
 		<article class="item">
@@ -95,11 +109,11 @@
 				<span class="fecha_item">Hace <strong>5</strong> mins</span>
 			</p>
 			<p class="votacion">
-				<a class="up" href="#">U</a>
+				<a class="up icon-arrow-up" href="#"></a>
 				696
-				<a class="down" href="#">D</a>
+				<a class="down icon-arrow-down" href="#"></a>
 				<a class="comentarios_item" href="#">3</a>
-				<a class="guardar_item" href="#">X</a>
+				<a class="guardar_item icon-star" href="#"></a>
 			</p>
 		</article>
 		<article class="item">
@@ -113,13 +127,14 @@
 				<span class="fecha_item">Hace <strong>5</strong> mins</span>
 			</p>
 			<p class="votacion">
-				<a class="up" href="#">U</a>
+				<a class="up icon-arrow-up" href="#"></a>
 				696
-				<a class="down" href="#">D</a>
+				<a class="down icon-arrow-down" href="#"></a>
 				<a class="comentarios_item" href="#">3</a>
-				<a class="guardar_item" href="#">X</a>
+				<a class="guardar_item icon-star" href="#"></a>
 			</p>
 		</article>
+		
 	</section>
 
 	<footer>
@@ -130,5 +145,13 @@
 			mejorando.la 2014
 		</P>
 	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/formulario.js"></script>
+	<script>
+		$(function(){
+
+		})
+
+	</script>
 </body>
 </html>
