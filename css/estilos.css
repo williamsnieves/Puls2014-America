@@ -1,9 +1,53 @@
+@font-face {
+	font-family: 'puls4';
+	src:url('fonts/puls4.eot?xma8lk');
+	src:url('fonts/puls4.eot?#iefixxma8lk') format('embedded-opentype'),
+		url('fonts/puls4.woff?xma8lk') format('woff'),
+		url('fonts/puls4.ttf?xma8lk') format('truetype'),
+		url('fonts/puls4.svg?xma8lk#puls4') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'puls4';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+	content: "\e601";
+}
+.icon-arrow-up:before {
+	content: "\e602";
+	color: #DD4F24;
+}
+.icon-star:before {
+	content: "\e603";
+	color: #FFBE2C;
+	margin-right: 0.4em;
+	position: relative;
+	top : 0.1em;
+
+}
+.icon-pencil:before {
+	content: "\e604";
+	margin-right: 0.8em;
+}
 a{
 	color:#22BCE0;
 }
 body{
 	background: #eeeeee;
-	font-family: Arial;
+	font-family: 'Open Sans', sans-serif;;
 	font-size: 16px;
 }
 
@@ -64,7 +108,9 @@ header #avatar img{
 }
 nav{
 	background: #80BCA3;
+	box-shadow: rgba(0,0,0,.5) 0 0 10px;
 	position: relative;
+	padding: 0 6em 0 0;
 }
 nav ul{
 	list-style: none;
@@ -162,5 +208,15 @@ nav ul #publicar_nav a{
 	position: absolute;
 	top: 100%;	
 	right: 3%;
+}
+
+#contenido .item .votacion a{
+	text-decoration: none;
+}
+
+
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item{
+	float: right;
 }
 
