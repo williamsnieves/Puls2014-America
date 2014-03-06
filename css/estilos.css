@@ -45,6 +45,9 @@
 a{
 	color:#22BCE0;
 }
+aside{
+	display:none;
+}
 body{
 	background: #eeeeee;
 	font-family: 'Open Sans', sans-serif;;
@@ -88,11 +91,21 @@ header h1{
 	margin: 0 70px 0 0;
 }
 
-header #logo img{
+header #logo{
 	border-right: 1px solid white;
 	padding-right: 0.5em;
 	margin-right: 0.5em;
+}
+
+header #logo img{
 	width: 52px;
+	transition: 0.5s all ease;
+}
+
+header #logo img:hover{
+	transform: rotate(360deg);
+	width: 52px;
+	cursor: pointer;
 }
 
 header #avatar{
@@ -126,6 +139,12 @@ nav ul li a{
 	display: block;
 	text-decoration: none;
 	padding: 0.5em;
+	transition:0.5s background ease;
+
+}
+
+nav ul li a:hover{
+	background: #344B54;
 
 }
 
@@ -142,6 +161,11 @@ nav ul #publicar_nav a{
 	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
 	padding: 0.6em 0.8em;
 	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px;
+	transition: 0.2s box-shadow ease;
+}
+
+nav ul #publicar_nav a:hover{
+	box-shadow: 0px 0px 30px yellow;
 }
 
 #contenido{
@@ -219,4 +243,58 @@ nav ul #publicar_nav a{
 #contenido .item .votacion .guardar_item{
 	float: right;
 }
+
+
+@media screen and (min-width: 800px){
+	#contenido{
+		overflow: hidden;
+	}
+	#contenido .item{
+		width: 49%;
+		float: left;
+		
+	}
+
+	#contenido .item:nth-child(odd){
+		margin-right: 2%;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	aside{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%;
+	}
+
+	aside video{
+		width: 100%;
+	}
+}
+
+
+/*FORMULARIOS*/
+
+.formulario{
+	display: none;
+	padding: 1em;
+	text-align: right;
+}
+
+.formulario input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0.2em;
+}
+
+.formulario input[type="submit"]{
+	background: #22BCE0;
+	border-color: #22BCE0;
+	color: white;
+	font-style: italic;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	text-shadow:rgba(0,0,0,0.5) 2px 2px 5px;
+}
+
 
