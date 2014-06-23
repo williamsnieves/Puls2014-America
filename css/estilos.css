@@ -188,17 +188,6 @@ nav ul #publicar_nav a {
 	width: 95%;
 }
 
-/*#contenido .item .votacion{
-	background: white;
-	border-radius: 0 0 0.5em 0.5em;
-	position: absolute;
-	padding: 0.5em 1em;
-	top: 100%;
-	left: 3%;
-	right: 3%;
-}*/
-
-
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item{
 	float: right;
